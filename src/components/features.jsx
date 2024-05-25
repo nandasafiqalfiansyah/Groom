@@ -43,13 +43,13 @@ const features = [
   },
   {
     id: 5,
-    title: 'Zen mode',
-    text: 'Switch to zen mode(full screen) for a better editing experience',
+    title: 'Responsive',
+    text: 'Start collaborating through your mobile',
   },
   {
     id: 6,
-    title: 'Responsive',
-    text: 'Start collaborating through your mobile',
+    title: 'configuration with AI',
+    text: 'Configure your workspace with AI',
   },
 ];
 

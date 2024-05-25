@@ -4,6 +4,8 @@ import { Box, useColorModeValue, Spinner, Center } from "@chakra-ui/react";
 import { COLORS } from "./colors";
 import Home from "../src/pages/Home/home";
 import Room from "../src/pages/Room/GroomAiComponent";
+import NotFound from "../src/pages/404/404";
+import DocPage from "./pages/docs/docs";
 const Loader = () => {
   return (
     <Center width="100%" height="100vh">
@@ -27,9 +29,10 @@ function App() {
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/room/:slug" element={<Room />} />
+          <Route path="/room" element={<Room />} />
+          <Route path="/docs" element={<DocPage />} />
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
@@ -37,3 +40,4 @@ function App() {
 }
 
 export default App;
+
