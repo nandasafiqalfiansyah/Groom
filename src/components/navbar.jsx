@@ -12,9 +12,10 @@ import {
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import { COLORS } from '../colors';
-import LogoBlack from '../assets/logo.svg';
-import LogoWhite from '../assets/logoWhite.svg';
+import LogoBlack from '../assets/logo.png';
+import LogoWhite from '../assets/logoWhite.png';
 import { MdOutlineNoteAdd } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 export default function WithSubnavigation({ screen, onQuestionOpen }) {
   const { hasCopied, onCopy } = useClipboard(window.location.href);
@@ -34,12 +35,14 @@ export default function WithSubnavigation({ screen, onQuestionOpen }) {
         align={'center'}
       >
         <Flex flex={{ base: 1 }} justify={{ md: 'start' }}>
+          <Link to="/">
           <img
             src={useColorModeValue(LogoBlack, LogoWhite)}
             height="50"
             width="150"
             alt="logo"
-          ></img>
+            ></img>
+          </Link>
         </Flex>
 
         <Stack

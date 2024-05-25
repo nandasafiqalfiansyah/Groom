@@ -7,8 +7,8 @@ import {
   VisuallyHidden,
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import LogoBlack from "../assets/logo.svg";
-import LogoWhite from "../assets/logoWhite.svg";
+import LogoBlack from "../assets/logo.png";
+import LogoWhite from "../assets/logoWhite.png";
 
 import { useEffect, useState } from "react";
 
@@ -72,24 +72,24 @@ export default function SmallWithLogoLeft() {
           {currentDate.getFullYear()} Made with ❤ by Nanda Safiq Alfiansyah
         </Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"https://twitter.com/7Aryany"}>
+          <SocialButton label={"Twitter"} href={"https://twitter.com"}>
             <FaTwitter />
           </SocialButton>
           <SocialButton
             label={"LinkedIn"}
-            href={"https://www.linkedin.com/in/yadav-aryan/"}
+            href={"https://www.linkedin.com/in/nandasafiqalfiansyah"}
           >
             <FaLinkedinIn />
           </SocialButton>
           <SocialButton
             label={"Instagram"}
-            href={"https://www.instagram.com/aryann__7/"}
+            href={"https://www.instagram.com/nanda_safiq_alfiansyah"}
           >
             <FaInstagram />
           </SocialButton>
           <SocialButton
             label={"Github"}
-            href={"https://github.com/starwiz-7/codestream"}
+            href={"https://github.com/nandasafiqalfiansyah/groom"}
           >
             <FaGithub />
           </SocialButton>
