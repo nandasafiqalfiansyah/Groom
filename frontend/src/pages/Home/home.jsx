@@ -22,7 +22,7 @@ import Footer from "../../components/footer";
 import { COLORS } from "../../colors";
 import EditorPicDark from "../../assets/code-dark.png";
 import EditorPicLight from "../../assets/code-light.png";
-import { keyframes } from '@emotion/react';
+import { keyframes } from "@emotion/react";
 
 const bounce = keyframes`
   0%, 100% {
@@ -34,8 +34,6 @@ const bounce = keyframes`
 `;
 
 const Home = () => {
-
-  
   return (
     <Box
       px={8}
@@ -77,8 +75,8 @@ const Home = () => {
           fontSize={{ base: "lg", md: "xl" }}
           color={useColorModeValue("gray.600", "gray.300")}
         >
-          Groom is a collaborative code editor where users can collaborate
-          with their team in realtime.
+          Groom is a collaborative code editor where users can collaborate with
+          their team in realtime.
         </chakra.p>
         <Stack
           direction={{ base: "column", sm: "row" }}
@@ -87,9 +85,7 @@ const Home = () => {
           spacing={2}
           justifyContent={{ sm: "left", md: "center" }}
         >
-          <Link
-            to={`/docs`}
-          >
+          <Link to={`/docs`}>
             <Button
               as="a"
               colorScheme="gray"
@@ -114,19 +110,19 @@ const Home = () => {
 
           <Link to="/room">
             <Button
-                as="a"
-                bgGradient="linear(to-r, green.400, purple.500)"
-                display="inline-flex"
-                alignItems="center"
-                justifyContent="center"
-                w={{ base: 'full', sm: 'auto' }}
-                mb={{ base: 2, sm: 0 }}
-                size="lg"
-                cursor="pointer"
-                animation={`${bounce} 1s infinite`}
-                _hover={{ transform: 'scale(1.05)' }}
-              >
-                Create new room
+              as="a"
+              bgGradient="linear(to-r, green.400, purple.500)"
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              w={{ base: "full", sm: "auto" }}
+              mb={{ base: 2, sm: 0 }}
+              size="lg"
+              cursor="pointer"
+              animation={`${bounce} 1s infinite`}
+              _hover={{ transform: "scale(1.05)" }}
+            >
+              Create new room
               <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
                 <path
                   fillRule="evenodd"
@@ -134,8 +130,8 @@ const Home = () => {
                   clipRule="evenodd"
                 />
               </Icon>
-              </Button>
-            </Link>
+            </Button>
+          </Link>
         </Stack>
       </Box>
       <Box
@@ -144,13 +140,13 @@ const Home = () => {
         mt={20}
         textAlign="center"
       >
-        {/* <Image
+        <Image
           w="full"
           rounded="lg"
           shadow="2xl"
           src={useColorModeValue(EditorPicDark, EditorPicLight)}
           alt="Codestream editor"
-        /> */}
+        />
       </Box>
       <Features />
       <Footer />

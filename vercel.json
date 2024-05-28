@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "/frontend",
+      "use": "@vercel/node",
+      "config": { "zeroConfig": true }
+    },
+    {
+      "src": "/backend",
+      "use": "@vercel/node",
+      "config": { "zeroConfig": true }
+    }
+  ],
+  "routes": [{ "handle": "filesystem" }]
+}
