@@ -1,3 +1,4 @@
+const port = 3001;
 const express = require("express");
 const http = require("http");
 const { Server } = require("socket.io");
@@ -103,6 +104,4 @@ app.get("/", (req, res) => {
   res.json({ msg: "hello there" });
 });
 
-server.listen(3000, () => {
-  console.log(`web server listening on port eb socket 3000`);
-});
+app.listen(port, () => console.log(`Backend app listening on port ${port}!`));
