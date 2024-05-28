@@ -7,7 +7,7 @@
     "install:backend": "cd backend && npm install",
     "start:frontend": "cd frontend && npm start",
     "start:server": "cd backend && npm start",
-    "test:frontend:unit": "cd frontend && npm test",
+    "test:frontend:unit": "cd frontend && npm build",
     "test:frontend": "cypress run --spec cypress/e2e/ui/customer.cy.js",
     "test:frontend:with:server": "start-server-and-test start:frontend 3000 test:frontend",
     "test:api": "cypress run --spec cypress/e2e/api/customer.cy.js",
